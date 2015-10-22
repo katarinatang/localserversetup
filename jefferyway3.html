@@ -5,7 +5,7 @@
 	<title></title>
 	<style>
 	.container { color: red;}
-	.different { color: blue;}
+	/*.emphasis { color: blue;}*/
 	</style>
 </head>
 <body>
@@ -26,7 +26,7 @@
 			<li>item 3</li>
 			<li>item 4</li>
 			<li>item 5</li>
-			<li>
+			<li>item 6
 				<ul>
 					<li>hello from the nest.</li>
 				</ul
@@ -39,7 +39,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
 
 <script>
-	$('ul.emphasis')
+	$('li')
 		.parents()
 			.removeClass('container');
 			// .addClass('different')
