@@ -4,7 +4,8 @@
 	<meta charset=utf-8>
 	<title></title>
 	<style>
-	.container { color: green;}
+	.container { color: red;}
+	.different { color: blue;}
 	</style>
 </head>
 <body>
@@ -22,7 +23,7 @@
 		<ul class="emphasis container">
 			<li>item</li>
 			<li>item 2</li>
-			<li>item 2</li>
+			<li>item 3</li>
 			<li>item 4</li>
 			<li>item 5</li>
 			<li>
@@ -38,6 +39,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
 
 <script>
+	$('ul.emphasis')
+		.parents()
+			.removeClass('container');
+			// .addClass('different')
+	console.log($('ul').parents('.container'));
+	console.log($('ul').closest('.container'));
 	// $('ul.emphasis')
 	// 	.children('li')
 	// 		.eq(3)
